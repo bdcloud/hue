@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hue-docker:
+     build: .
+     image: bdcloud/hue-docker
+     ports:
+       - 8388:8888
+     network_mode: hadoop_default
+#     volumes:
+#       - "./conf:/root/conf"
